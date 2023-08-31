@@ -1,0 +1,88 @@
+h1 {
+    color: #422040;
+    background-color: #BCD8C1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: Arial, sans-serif, "times";
+    background-color: #D6DBB2;
+}
+
+#formulario {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #E3D985;
+    border: 1px dashed ;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #422040;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+input[type="submit"],
+button[type="reset"],
+button[type="button"]
+{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+    background-image: linear-gradient(#E57A44,#E3D985);
+}
+
+select:focus {
+    outline: #422040 2px dashed;
+    border-color: black;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #422040;
+    margin-bottom: 20px;
+}
+
+input :invalid {
+    border: 2px solid red
+}
+
+.rodape {
+    margin: 0 auto ;
+    text-align: center;
+}
