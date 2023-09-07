@@ -1,0 +1,73 @@
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container-box1 {
+    display: grid;
+    flex-wrap: wrap;
+}
+
+
+p {
+    color: white;
+}
+
+aside {
+    flex: 0 0 30%;
+    margin-left: 10px;
+}
+
+footer {
+    text-align:  center;
+    color: black;
+}
+
+h2 {
+    color: white;
+}
+.articles {
+    border: 3px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    float: left;
+    background-color: #DB7023;
+}
+
+header {
+    background-size: cover;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.box {
+    background-color: #dddddd;
+    border-radius: 5px;
+    margin: var(--margin);
+    height: 50px;
+}
+
+img {
+    float: left;
+    width: 80px;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+body {
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This will separate container-box and aside */
+}
+
+    
