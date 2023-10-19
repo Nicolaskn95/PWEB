@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        const aluno1 = {
+            ra: '0030112124028',
+            nome: 'Nicolas',
+        }
+        const aluno2 = {
+            ra: '123456',
+            nome: 'Gabriel',
+        }
+
+        function Aluno(ra, nome) {
+            this.ra = ra
+            this.nome = nome
+
+            this.mostrarDados = function() {
+                return "ra=" + this.ra + " nome=" + this.nome
+            }
+        }
+
+
+        function Aluno10() {
+            var nome 
+            var ra
+
+            this.setRa = function (value) {
+                this.ra = value
+            }
+            this.getRa = function () {
+                return this.ra
+            }
+            this.getNome = function () {
+                 return this.nome
+            }
+            this.setNome = function (value) {
+                this.nome = value
+            }
+        }
+
+        let aluno5 = new Aluno10()
+        aluno5.setRa('12345')
+        aluno5.setNome('nicolas')
+        alert(aluno5.getRa())
+        alert(aluno5.getNome())
+
+        // var aluno4 = new Aluno("123", "Jaquiel")
+        // alert("ra=" + aluno2.ra + " nome=" + aluno2.nome)
+        // alert("ra=" + aluno1.ra + " nome=" + aluno1['nome'])
+        // alert(aluno4.mostrarDados())
+        // alert(aluno4.nome)
+        // alert(aluno4.ra)
+
+    </script>
+</body>
+</html>
