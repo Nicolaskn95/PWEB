@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>windows</title>
+    <style>
+        .image {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        function changeImage(event) {
+        var img = document.getElementById('image')
+            if (event.type === 'mouseover') img.src = 'fechada.jpeg'
+            else if (event.type === 'mouseout') img.src = 'aberto.jpeg'
+            else if (event.type === 'dblclick') img.src = 'quebrada.jpeg'
+        }
+    </script>
+</head>
+
+
+<body> 
+    <img id='image' class="image" src="aberto.jpeg"
+        onmouseover="changeImage(event)"
+        onmouseout="changeImage(event)"
+        ondblclick="changeImage(event)"
+    >
+
+</body>
+</html>
