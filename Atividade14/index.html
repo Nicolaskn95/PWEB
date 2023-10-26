@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>atv 14</title>
+
+    <script>
+        function alterarTexto() {
+            var texto = document.getElementById('texto').value
+            var chkBoxMaiuscula = document.getElementById('maiuscula').checked
+            var chkBoxMiniscula = document.getElementById('minuscula').checked
+            var resultado = document.getElementById('texto');
+
+            if(chkBoxMaiuscula) resultado.value = texto.toUpperCase()
+            else if(chkBoxMiniscula)  resultado.value = texto.toLowerCase()
+            else document.getElementById('texto').value = texto
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="checkbox" name="" id="maiuscula" onclick="alterarTexto()">
+    <input type="checkbox" name="" id="minuscula" onclick="alterarTexto()">
+    <input type="text" name="texto" id="texto" oninput="alterarTexto()" required>
+</form>
+</body>
+</html>
